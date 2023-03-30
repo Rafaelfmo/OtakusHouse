@@ -1,0 +1,29 @@
+
+.list-back {
+    background-color: aqua;
+}
+
+#descricao{
+    text-align: center;
+    background-color: #fde3a7d7;
+}
+
+#descricao-card{
+    background-color: #8C9F7F;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 1rem;
+    padding: 1%;
+}
+
+.navbar{
+    background: #8C9F7F;
+}
+
+.nav-link {
+    color: aquamarine;
+}
+
+.custom-card-bg {
+    background-color: aqua!important;
+}

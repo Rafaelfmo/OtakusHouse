@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS para Home */
+#home{
+  background-color: #fde3a7d7;
+}
+
+.navbar{
+  background: #8C9F7F;
+}
+
+.input-group{
+  padding: 3rem;
+}
+
+.card{
+  max-height: 500px !important;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+  width: 15rem;
+}
+
+.list-group{
+  text-align: center;
+}
+
+.card-img-top{
+  max-height: 125px;
+}
+
+.card-text {
+  min-height: 150px;
+}
+
+.container-fluid a {
+  color: #fff !important;
+}
+
+.nav-link {
+  color: aquamarine;
+}
+
+
+
+
