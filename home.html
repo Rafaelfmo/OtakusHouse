@@ -1,17 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"> 
+    <meta charset="utf-8" />
     <title>OtakusHouse</title>
-    <link rel="stylesheet" href="styles/home.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/home.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
   </head>
+
   <body id="home">
     <!-- Barra de navegação -->
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">OtakusHouse</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -22,142 +36,321 @@
             <li class="nav-item">
               <a class="nav-link active" href="#">Minhas reservas</a>
             </li>
-          </ul> 
+          </ul>
         </div>
-        <a class="navbar-brand" href="#">Login</a>
+        <a class="navbar-brand" href="/login.html">Login</a>
       </div>
     </nav>
 
     <!-- Botão de pesquisa -->
     <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="Digite aqui para pesquisar um local" aria-label="Recipient's username" aria-describedby="button-addon2">
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Pesquisar</button>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Digite aqui para pesquisar um local"
+        aria-label="Recipient's username"
+        aria-describedby="button-addon2"
+      />
+      <button
+        class="btn btn-outline-secondary"
+        type="button"
+        id="button-addon2"
+      >
+        Pesquisar
+      </button>
     </div>
 
     <!-- Cards -->
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-3 aling-items-stretch">
-          <div class="card">
-            <img src="images/MestreKameHouse.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Kame House</h5>
-              <p class="card-text">Casa do Kame (カメハウス, Kame Hausu) é uma casa numa ilha bem pequena no meio do mar. É o lar do Mestre Kame</p>
+    <main>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card">
+              <img
+                src="images/MestreKameHouse.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kame House</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  14 - 19 mar
+                </h6>
+                <div class="card-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"
+                    ></path>
+                  </svg>
+                  <span>4,4</span>
+                </div>
+                <p class="card-subtitle"><b>R$ 600</b> noite</p>
+                <p class="card-text">
+                  Casa do Kame (カメハウス, Kame Hausu) é uma casa numa ilha bem
+                  pequena no meio do mar. É o lar do Mestre Kame
+                </p>
+              </div>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Avaliação</li>
-              <li class="list-group-item">Datas</li>
-              <li class="list-group-item">Valor</li>
-            </ul>
           </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 aling-items-stretch">
-          <div class="card">
-            <img src="images/HokageMansion.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Hokage Mansion</h5>
-              <p class="card-text">A Residência Hokage é uma grande mansão ocupada pelo Hokage durante seu mandato e está localizada perto da Academia e da Rocha Hokage .</p>
+          <div class="col">
+            <div class="card">
+              <img
+                src="images/HokageMansion.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Hokage Mansion</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  14 - 19 mar
+                </h6>
+                <div class="card-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"
+                    ></path>
+                  </svg>
+                  <span>4,4</span>
+                </div>
+                <p class="card-subtitle"><b>R$ 600</b> noite</p>
+                <p class="card-text">
+                  A Residência Hokage é uma grande mansão ocupada pelo Hokage
+                  durante seu mandato e está localizada perto da Academia e da
+                  Rocha Hokage .
+                </p>
+              </div>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Avaliação</li>
-              <li class="list-group-item">Datas</li>
-              <li class="list-group-item">Valor</li>
-            </ul>
           </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 aling-items-stretch">
-          <div class="card">
-            <img src="images/GoingMarry.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Navio GoingMarry</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="col">
+            <div class="card">
+              <img
+                src="images/GoingMarry.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Navio GoingMarry</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  14 - 19 mar
+                </h6>
+                <div class="card-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"
+                    ></path>
+                  </svg>
+                  <span>4,4</span>
+                </div>
+                <p class="card-subtitle"><b>R$ 600</b> noite</p>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Avaliação</li>
-              <li class="list-group-item">Datas</li>
-              <li class="list-group-item">Valor</li>
-            </ul>
           </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 aling-items-stretch">
-          <div class="card">
-            <img src="images/Casa Paradis.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Casa em Paradis</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="col">
+            <div class="card">
+              <img
+                src="images/Casa Paradis.webp"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Casa em Paradis</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  14 - 19 mar
+                </h6>
+                <div class="card-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"
+                    ></path>
+                  </svg>
+                  <span>4,4</span>
+                </div>
+                <p class="card-subtitle"><b>R$ 600</b> noite</p>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Avaliação</li>
-              <li class="list-group-item">Datas</li>
-              <li class="list-group-item">Valor</li>
-            </ul>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="images/DioMansion.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mansão do DIO!</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  14 - 19 mar
+                </h6>
+                <div class="card-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"
+                    ></path>
+                  </svg>
+                  <span>4,4</span>
+                </div>
+                <p class="card-subtitle"><b>R$ 600</b> noite</p>
+                <p class="card-text">
+                  A Mansão de DIO é uma mansão de três andares feita de
+                  terracota situada em um dos distritos mais velhos de Cairo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="images/UA.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Academia UA</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  14 - 19 mar
+                </h6>
+                <div class="card-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"
+                    ></path>
+                  </svg>
+                  <span>4,4</span>
+                </div>
+                <p class="card-subtitle"><b>R$ 600</b> noite</p>
+                <p class="card-text">
+                  A U.A. (雄ゆう英えい高こう校こう Yūei Kōkō, "Escola de Ensino
+                  Médio U.A.") é uma academia onde estudantes aprendem e treinam
+                  para se tornarem heróis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="images/BoarHat.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Chapéu de Javali</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  14 - 19 mar
+                </h6>
+                <div class="card-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"
+                    ></path>
+                  </svg>
+                  <span>4,4</span>
+                </div>
+                <p class="card-subtitle"><b>R$ 600</b> noite</p>
+                <p class="card-text">
+                  O Chapéu de Javali é um bar móvel, cujo dono e fundador é o
+                  líder dos Sete Pecados Capitais, Meliodas.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="images/GraceField.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Casa da Vô Joana</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  14 - 19 mar
+                </h6>
+                <div class="card-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"
+                    ></path>
+                  </svg>
+                  <span>4,4</span>
+                </div>
+                <p class="card-subtitle"><b>R$ 600</b> noite</p>
+                <p class="card-text">
+                  Casa, também referida como Orfanato ou Grace Field House. Na
+                  casa é aonde mora Mama Isabella e todas as crianças que vivem
+                  na planta.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="card">
-            <img src="images/DioMansion.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Mansão do DIO!</h5>
-              <p class="card-text">A Mansão de DIO é uma mansão de três andares feita de terracota situada em um dos distritos mais velhos de Cairo.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Avaliação</li>
-              <li class="list-group-item">Datas</li>
-              <li class="list-group-item">Valor</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="card">
-            <img src="images/UA.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Academia UA</h5>
-              <p class="card-text">A U.A. (雄ゆう英えい高こう校こう Yūei Kōkō, "Escola de Ensino Médio U.A.") é uma academia onde estudantes aprendem e treinam para se tornarem heróis.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Avaliação</li>
-              <li class="list-group-item">Datas</li>
-              <li class="list-group-item">Valor</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="card">
-            <img src="images/BoarHat.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Chapéu de Javali</h5>
-              <p class="card-text">O Chapéu de Javali é um bar móvel, cujo dono e fundador é o líder dos Sete Pecados Capitais, Meliodas.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Avaliação</li>
-              <li class="list-group-item">Datas</li>
-              <li class="list-group-item">Valor</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="card">
-            <img src="images/GraceField.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Casa da Vô Joana</h5>
-              <p class="card-text"> Casa, também referida como Orfanato ou Grace Field House. Na casa é aonde mora Mama Isabella e todas as crianças que vivem na planta.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Avaliação</li>
-              <li class="list-group-item">Datas</li>
-              <li class="list-group-item">Valor</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+    </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <footer class="text-body-secondary py-5">
+      <div class="container">
+        <p class="mb-1">
+          Somos a OtakusHouse, uma empresa especializada em oferecer hospedagem
+          em lugares icônicos de anime.
+        </p>
+        <p class="mb-0">
+          © 2023 OtakusHouse
+          <a href="#">Contato</a>
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
-
-
-
-
