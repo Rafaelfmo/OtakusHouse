@@ -1,29 +1,44 @@
-
 .list-back {
-    background-color: aqua;
+  background-color: aqua;
 }
 
-#descricao{
-    text-align: center;
-    background-color: #fde3a7d7;
+#descricao {
+  text-align: center;
 }
 
-#descricao-card{
-    background-color: #8C9F7F;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-radius: 1rem;
-    padding: 1%;
-}
-
-.navbar{
-    background: #8C9F7F;
+.navbar {
+  background: #8c9f7f;
 }
 
 .nav-link {
-    color: aquamarine;
+  color: aquamarine;
 }
 
-.custom-card-bg {
-    background-color: aqua!important;
+.d-block {
+  object-fit: cover;
+  height: 250px !important;
+}
+
+.description h1,
+h3,
+h4,
+h5,
+h6,
+p,
+label {
+  text-align: left;
+}
+
+.form-label {
+  padding-left: 8px;
+}
+
+.custom-card {
+  border: none !important;
+  border-radius: 20px;
+}
+
+.card-header {
+  border: none !important;
+  background: none !important;
 }

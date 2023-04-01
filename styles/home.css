@@ -6,7 +6,12 @@
 /* CSS para Home */
 
 .navbar {
-  background: #8c9f7f;
+  background: #00a39c;
+}
+
+#button-addon2 {
+  background-color: #00a39c;
+  color: #fff;
 }
 
 .input-group {

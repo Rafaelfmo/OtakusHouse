@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>OtakusHouse</title>
-  <link rel="stylesheet" href="styles/redefinir.css">
-</head>
-<body id="redefinirSenha">
-  <div class="container">
-    <div class="form-image">
-      <img src="images/OtakusHouse.png" alt="Logo-png">
+  <head>
+    <meta charset="UTF-8" />
+    <title>OtakusHouse</title>
+    <link rel="stylesheet" href="styles/redefinir.css" />
+    <link rel="icon" href="images/OtakusHouse.png" />
+  </head>
+  <body id="redefinirSenha">
+    <div class="container">
+      <div class="form-image">
+        <img src="images/OtakusHouse.png" alt="Logo-png" />
+      </div>
+      <div class="form">
+        <form action="#">
+          <div class="form-header">
+            <h1>Redefinir senha</h1>
+            <p>Digite sua nova senha, diferente da anterior</p>
+          </div>
+          <div class="input-group">
+            <div class="input-box">
+              <label for="novaSenha">Nova senha</label>
+              <input
+                type="password"
+                name="novaSenha"
+                id="novaSenha"
+                placeholder="Digite sua nova senha"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="confirmarSenha">Confimar senha</label>
+              <input
+                type="password"
+                name="confirmarSenha"
+                id="confirmarSenha"
+                placeholder="Verifique sua nova senha"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <button type="submit">Redefinir</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-    <div class="form">
-      <form action="#">
-        <div class="form-header">
-          <h1>Redefinir senha</h1>
-          <p>Digite sua nova senha, diferente da anterior</p>
-        </div>
-        <div class="input-group">
-          <div class="input-box">
-            <label for="novaSenha">Nova senha</label>
-            <input type="password" name="novaSenha" id="novaSenha" placeholder="Digite sua nova senha" required>
-          </div>
-          <div class="input-box">
-            <label for="confirmarSenha">Confimar senha</label>
-            <input type="password" name="confirmarSenha" id="confirmarSenha" placeholder="Verifique sua nova senha" required>
-          </div>
-          <div class="input-box">
-            <button type="submit">Redefinir</button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
