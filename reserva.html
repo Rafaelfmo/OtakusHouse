@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>OtakusHouse - Reserva</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="images/OtakusHouse.png" />
+
+    <link href="styles/reserva.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand fw-bolder fs-4"
+          href="/home.html"
+          style="color: #00a39c"
+          >OtakusHouse</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" aria-current="page" href="#"
+                >Início</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="#">Minhas reservas</a>
+            </li>
+          </ul>
+        </div>
+        <a class="navbar-brand login-brand fw-bolder fs-6" href="/login.html"
+          >Login</a
+        >
+      </div>
+    </nav>
+
+    <br />
+    <br />
+
+    <div class="container">
+      <main>
+        <div class="text-left">
+          <h1 class="fw-bolder">Reservar</h1>
+        </div>
+        <br />
+        <div class="row g-5">
+          <div class="col-md-5 col-lg-4 order-md-last">
+            <ul class="list-group mb-3">
+              <li class="list-group-item lh-sm">
+                <div class="row room-info-container">
+                  <img
+                    src="images/MestreKameHouse.jpg"
+                    class="img-thumbnail img-fluid col-4"
+                    style="object-fit: cover"
+                    alt="..."
+                  />
+
+                  <div class="room-info col-8">
+                    <div
+                      class="d-flex flex-column justify-content-between h-100"
+                    >
+                      <div class="d-flex flex-column">
+                        <span class="text-body-secondary"
+                          >Espaço inteiro: Condomínio</span
+                        >
+                        <span class="fw-bolder fs-4">Kame House</span>
+                      </div>
+                      <div>
+                        <div class="d-flex gap-1 align-items-center">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 16 16"
+                            width="14"
+                            height="14"
+                          >
+                            <path
+                              d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"
+                            ></path>
+                          </svg>
+                          <span>4,4</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item lh-sm">
+                <br />
+                <h6 class="my-0">Informações de preço</h6>
+                <br />
+                <div class="d-flex justify-content-between w-100">
+                  <small class="text-body-secondary">R$360,00 x 5 noites</small>
+                  <span class="text-body-secondary">R$ 1800,00</span>
+                </div>
+                <div class="d-flex justify-content-between w-100">
+                  <small class="text-body-secondary">Taxa de serviço</small>
+                  <span class="text-body-secondary">R$ R$261,71</span>
+                </div>
+                <br />
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between">
+                <h6>Total (BRL)</h6>
+                <strong>R$2.061,71</strong>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-7 col-lg-8">
+            <h4 class="mb-3">Sua viagem</h4>
+            <br class="" />
+            <div class="row justify-content-center">
+              <div class="col-md-12 edit">
+                <label class="form-label fw-semibold">Datas</label>
+                <p class="form-label fw-normal">16 - 21 mar</p>
+                <span class="fw-semibold edit-item">Editar</span>
+              </div>
+              <div class="col-md-12 edit">
+                <label class="form-label fw-semibold">Hóspedes</label>
+                <p class="form-label fw-normal">1 Hóspede</p>
+                <span class="fw-semibold edit-item">Editar</span>
+              </div>
+            </div>
+            <form class="needs-validation">
+              <hr class="my-4" />
+
+              <h4 class="mb-3">Pagamento</h4>
+
+              <div class="my-3">
+                <div class="form-check">
+                  <input
+                    id="credit"
+                    name="paymentMethod"
+                    type="radio"
+                    class="form-check-input"
+                    checked
+                    required
+                  />
+                  <label class="form-check-label" for="credit"
+                    >Cartão de Crédito</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    id="debit"
+                    name="paymentMethod"
+                    type="radio"
+                    class="form-check-input"
+                    required
+                  />
+                  <label class="form-check-label" for="debit"
+                    >Cartão de débito</label
+                  >
+                </div>
+              </div>
+
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <label for="cc-name" class="form-label">Nome no cartão</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cc-name"
+                    placeholder=""
+                    required
+                  />
+                  <small class="text-body-secondary"
+                    >Nome completo mostrado no cartão</small
+                  >
+                  <div class="invalid-feedback">
+                    Nome no cartão é obrigatório
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="cc-number" class="form-label"
+                    >Número do cartão</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cc-number"
+                    placeholder=""
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Numero do cartão é obrigatório
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="cc-expiration" class="form-label"
+                    >Vencimento</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cc-expiration"
+                    placeholder=""
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Data de expiração é obrigatório
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="cc-cvv" class="form-label">CVV</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cc-cvv"
+                    placeholder=""
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Código de segurança é obrigatório
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-4" />
+
+              <button
+                class="w-100 btn btn-lg btn-primary"
+                style="background-color: #00a39c"
+                type="submit"
+              >
+                Reservar
+              </button>
+            </form>
+          </div>
+        </div>
+      </main>
+
+      <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+        <p class="mb-1">&copy; 2023 OtakusHouse</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

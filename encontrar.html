@@ -1,54 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>OtakusHouse</title>
-  <link rel="stylesheet" href="styles/recuperar.css">
-</head>
-<body id="recuperar">
-  <div class="container">
-    <div class="form-image">
-      <img src="images/OtakusHouse.png" alt="Logo-png">
-    </div>
-    <div class="form">
-      <form action="#">
-        <div class="form-header">
-          <h1>Encontre sua conta</h1>
-          <p>insira seu email ou número de celular para procurar a conta</p>
-        </div>
-        <div class="input-group">
-          <div class="input-box">
-            <label for="email_Telefone">Email ou Telefone</label>
-            <input type="text" name="email_Telefone" id="email_Telefone" placeholder="Digite aqui o email ou telefone" required>
-          </div>
-          <div class="input-box">
-            <button type="submit">Procurar</button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>OtakusHouse</title>
+    <link rel="stylesheet" href="styles/login.css" />
+    <link rel="icon" href="images/OtakusHouse.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="left"></div>
+      <div class="right">
+        <main class="form-signin w-100 m-auto">
+          <form id="loginForm">
+            <div class="form-img-container">
+              <img
+                class="form-img"
+                src="images/OtakusHouse.png"
+                alt=""
+                width="72"
+                height="57"
+              />
+            </div>
+            <br />
+            <h1 class="h3 mb-3 fw-bolder">Encontre sua conta</h1>
+            <h5 class="h5 mb-3 fw-normal">
+              Insira seu email ou número de celular para encontrar sua conta.
+            </h5>
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="findByEmailOrPhone"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Email ou número</label>
+            </div>
 
-<!-- 
-<div class="container">
-  <div class="form-image">
-    <img src="images/OtakusHouse.png" alt="Logo-png">
-  </div>
-  <div class="form">
-    <div class="form-header">
-      <h1>Encontre sua conta</h1>
-      <p>Insira seu email ou número de celular para procurar sua conta</p>
-    </div>
-    <div class="input-group">
-      <div class="inpout-box">
-        <label for="email_Telefone">Email ou Telefone</label>
-        <input type="text" name="email_Telefone" id="email_Telefone">
-      </div>
-      <div class="input-box">
-        <button>Recuperar conta</button>
+            <br />
+            <button id="btn-login" class="w-100 btn btn-lg" type="submit">
+              Recuperar conta
+            </button>
+          </form>
+        </main>
       </div>
     </div>
-  </div>
-</div> -->
+    <script src="js/encontrar.js" type="module"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
