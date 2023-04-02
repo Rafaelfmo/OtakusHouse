@@ -1,0 +1,41 @@
+.container-fluid {
+  padding: 10px 12px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.17);
+}
+
+@media (max-width: 992px) {
+  .login-brand {
+    display: none;
+  }
+}
+
+.navbar {
+  padding-top: 0 !important;
+}
+
+.edit {
+  position: relative;
+}
+
+.edit-item {
+  position: absolute;
+  top: 15px;
+  right: 5px;
+  border-bottom: 1px solid #212529;
+}
+
+.edit-item:hover {
+  cursor: pointer;
+  color: #00a39c;
+  border-color: #00a39c;
+  transition: 0.2s ease-in-out;
+}
+
+.room-info-container {
+  padding: 20px 0;
+}
+
+.room-info-container svg,
+.room-info-container img {
+  border: none;
+}
