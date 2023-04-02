@@ -5,8 +5,19 @@
 
 /* CSS para Home */
 
+.container-fluid {
+  padding: 10px 0;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.17);
+}
+
+@media (max-width: 992px) {
+  .login-brand {
+    display: none;
+  }
+}
+
 .navbar {
-  background: #00a39c;
+  padding-top: 0 !important;
 }
 
 #button-addon2 {
@@ -15,7 +26,7 @@
 }
 
 .input-group {
-  padding: 3rem;
+  padding: 70px 0;
 }
 
 .col {
@@ -67,12 +78,4 @@
   display: none;
   box-sizing: border-box;
   transition: 0.2s ease-in-out;
-}
-
-.container-fluid a {
-  color: #fff !important;
-}
-
-.nav-link {
-  color: aquamarine;
 }
