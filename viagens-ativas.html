@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
 
-    <title>OtakusHouse - Perfil</title>
+    <title>OtakusHouse - Minhas reservas</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
@@ -13,7 +13,7 @@
     />
     <link rel="icon" href="images/OtakusHouse.png" />
 
-    <link href="styles/perfil.css" rel="stylesheet" />
+    <link href="styles/viagens.css" rel="stylesheet" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -58,37 +58,41 @@
     <div class="container">
       <main>
         <div class="text-left">
-          <h1 class="fw-bolder">Perfil</h1>
+          <h1 class="fw-bolder">Suas viagens</h1>
         </div>
         <br />
         <div class="row">
           <div class="col-md-12">
-            <br class="" />
-            <div class="row justify-content-center">
-              <div class="col-md-12 edit" id="name">
-                <label class="form-label fw-semibold">Nome</label>
-                <!-- <p id="name" class="form-label fw-normal">Paulo</p> -->
-                <span class="fw-semibold edit-item">Editar</span>
+            <ul class="nav nav-underline">
+              <li class="nav-item">
+                <a class="nav-link active" href="/viagens-ativas.html"
+                  >Ativas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/viagens-finalizadas.html"
+                  style="color: #3e3f3f"
+                  >Encerradas</a
+                >
+              </li>
+            </ul>
+            <div class="d-flex gap-2 flex-column my-4">
+              <div class="list-card" id="travel-01">
+                <img
+                  src="/images/DioMansion.jpg"
+                  class="img-thumbnail"
+                  alt="..."
+                />
+                <div>
+                  <h5 class="fw-bolder h5">Mansão do DIO</h5>
+                  <p class="fw-normal mb-1">Anfitrião: DIO</p>
+                  <p class="fw-normal mb-1">
+                    28 de dez. de 2023 – 30 de dez. de 2023
+                  </p>
+                </div>
               </div>
-              <hr />
-              <div class="col-md-12 edit" id="email">
-                <label class="form-label fw-semibold">Email</label>
-                <!-- <p id="email" class="form-label fw-normal">São Pedro</p> -->
-                <span class="fw-semibold edit-item">Editar</span>
-              </div>
-              <hr />
-              <div class="col-md-12 edit" id="tel">
-                <label class="form-label fw-semibold">Número de telefone</label>
-                <!-- <p id="tel" class="form-label fw-normal">São Pedro</p> -->
-                <span class="fw-semibold edit-item">Editar</span>
-              </div>
-              <hr />
-              <div class="col-md-12 edit" id="address">
-                <label class="form-label fw-semibold">Endereço</label>
-                <!-- <p id="address" class="form-label fw-normal">São Pedro</p> -->
-                <span class="fw-semibold edit-item">Editar</span>
-              </div>
-              <hr />
             </div>
           </div>
         </div>
@@ -103,7 +107,7 @@
         </ul>
       </footer>
     </div>
-    <script src="js/perfil.js" type="module"></script>
+    <script src="js/viagens.js" type="module"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
